@@ -40,6 +40,14 @@ body {
     overflow-x: hidden;
 }
 
+.privacy-body {
+    background: radial-gradient(circle at 20% 15%, rgba(119, 86, 255, 0.25), rgba(5, 6, 15, 0.94));
+}
+
+.whitepaper-body {
+    background: radial-gradient(circle at 18% 18%, rgba(103, 247, 255, 0.18), rgba(5, 6, 15, 0.94));
+}
+
 body::before {
     content: '';
     position: fixed;
@@ -383,6 +391,202 @@ body::before {
 
 .app-section {
     padding: 4.5rem 0 5.5rem;
+}
+
+.privacy-main {
+    padding-bottom: 4rem;
+}
+
+.whitepaper-main {
+    padding-bottom: 4rem;
+}
+
+.privacy-hero {
+    padding: 6rem 0 3rem;
+    background: linear-gradient(160deg, rgba(10, 24, 52, 0.95), rgba(6, 12, 26, 0.8));
+    border-bottom: 1px solid rgba(103, 247, 255, 0.08);
+}
+
+.whitepaper-hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(155deg, rgba(8, 18, 38, 0.92), rgba(9, 28, 46, 0.8));
+    border-bottom: 1px solid rgba(103, 247, 255, 0.08);
+}
+
+.privacy-kicker {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.whitepaper-kicker {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-size: 0.78rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3.4rem);
+    margin-bottom: 1rem;
+}
+
+.whitepaper-hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.6rem, 4.2vw, 3.6rem);
+    margin-bottom: 1.2rem;
+}
+
+.privacy-subhead {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.whitepaper-intro {
+    color: var(--text-secondary);
+    max-width: 60ch;
+    margin-bottom: 2rem;
+}
+
+.privacy-intro {
+    color: var(--text-secondary);
+    max-width: 60ch;
+}
+
+.privacy-intro-secondary {
+    margin-top: 1rem;
+}
+
+.privacy-section {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid rgba(103, 247, 255, 0.05);
+}
+
+.privacy-section:last-of-type {
+    border-bottom: none;
+}
+
+.privacy-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    margin-bottom: 1.2rem;
+}
+
+.privacy-section p {
+    color: var(--text-secondary);
+    max-width: 68ch;
+    margin-bottom: 1.2rem;
+}
+
+.privacy-list {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    color: var(--text-secondary);
+    max-width: 72ch;
+}
+
+.privacy-list li {
+    padding: 1rem 1.2rem;
+    border-radius: var(--radius-md);
+    background: rgba(8, 16, 32, 0.55);
+    border: 1px solid rgba(103, 247, 255, 0.12);
+    position: relative;
+}
+
+.privacy-list li::before {
+    content: '';
+    position: absolute;
+    left: 0.85rem;
+    top: 1.2rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px rgba(103, 247, 255, 0.45);
+}
+
+.privacy-list li strong {
+    color: var(--text-primary);
+}
+
+.privacy-section.section-alt {
+    background: rgba(5, 12, 26, 0.72);
+}
+
+.privacy-section.section-alt .privacy-list li {
+    background: rgba(8, 18, 36, 0.65);
+}
+
+.privacy-section a {
+    color: var(--accent);
+}
+
+.whitepaper-section {
+    padding: 4.5rem 0;
+}
+
+.whitepaper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.whitepaper-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: 0 20px 40px rgba(5, 12, 24, 0.55);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.whitepaper-card h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+}
+
+.whitepaper-card p {
+    color: var(--text-secondary);
+}
+
+.whitepaper-list {
+    list-style: none;
+    display: grid;
+    gap: 1.1rem;
+    color: var(--text-secondary);
+}
+
+.whitepaper-list li {
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.whitepaper-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 14px rgba(103, 247, 255, 0.45);
+}
+
+.whitepaper-note {
+    color: var(--text-muted);
 }
 
 .app-card {
@@ -739,7 +943,8 @@ body::before {
     .labs-grid,
     .contact-grid,
     .footer-layout,
-    .app-card {
+    .app-card,
+    .whitepaper-grid {
         grid-template-columns: 1fr;
     }
 
@@ -813,6 +1018,10 @@ body::before {
 
     .app-button {
         justify-self: center;
+    }
+
+    .whitepaper-card {
+        text-align: center;
     }
 }
 
